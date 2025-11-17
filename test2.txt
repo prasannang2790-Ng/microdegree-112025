@@ -1,1 +1,3 @@
 echo " This will explain how the conflicts works"
+echo " This will explain how the conflicts works"
+echo " This will explain how the conflicts works"
