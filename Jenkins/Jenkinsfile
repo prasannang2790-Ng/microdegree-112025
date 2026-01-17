@@ -1,0 +1,37 @@
+pipeline {
+    agent any
+
+    stages{
+        stage('Server date'){
+            steps{
+                sh 'date'
+            }
+        }
+        stage('Ip Address'){
+           steps{
+               sh 'hostname -I'
+           } 
+        }
+        stage('Cpu Details'){
+            steps{
+                sh 'lscpu' 
+            }
+        }
+        stage('Disk Usage'){
+            steps{
+                sh 'du -h'
+            }
+        }
+        stage('Memory Usage'){
+            steps{
+                sh 'free -h'
+            }
+        }
+        stage('Partition Details'){
+            steps{
+                sh 'lsblk'
+            }
+
+        }
+    }
+}
