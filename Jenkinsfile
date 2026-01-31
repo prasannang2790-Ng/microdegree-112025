@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'manjokakar07/test-dev:latest'
+        DOCKER_IMAGE = 'prasannang27/test-dev'
     }
 
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/manjokakar/scroll-web.git'
+                git 'https://github.com/prasannang2790-Ng/microdegree-112025.git'
             }
         }
 
